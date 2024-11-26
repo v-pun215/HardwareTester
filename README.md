@@ -13,7 +13,5 @@ A website that simply lets you test hardware connected to your device.
 > Checking your GPU
 1. When loaded, the page shows information about your GPU.
 
-# Demo Video
-[![Demo Video](https://img.youtube.com/vi/oxEW4DR76lY/0.jpg)](https://youtu.be/oxEW4DR76lY)
 
 Made with 💚 by v-pun215
