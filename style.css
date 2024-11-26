@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body {
+    font-family:'Inter',sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+.header {
+    background-color: rgb(21, 21, 22);
+    color: #fff;
+    padding: 7px 0;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+nav {
+    background-color: rgb(21, 21, 22);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width:fit-content;
+    padding-left:1.1vh;
+    padding-right:1.1vh;
+    height:33px;
+    margin-top:0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: 0.1s ease-in-out;
+}
+nav a:hover{
+    background-color: #333;
+    border-radius: 10px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.test {
+    background-color: #fff;
+    padding-top:1px;
+    padding-left:35px;
+    padding-right:35px;
+    padding-bottom: 20px;
+    margin: 20px;
+    width:30%;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.15s ease-in-out;
+    cursor:pointer;
+}
+.test:hover {
+    transform: scale(1.02);
+}
+.test h1 {
+    color: black;
+    font-size: 40px;
+    padding-bottom:none;
+    margin-bottom:0;
+}
+.last {
+    width:65.6%;
+}
+.tester {
+    background-color: #fff;
+    padding-top:1px;
+    padding-left:35px;
+    padding-right:35px;
+    padding-bottom: 20px;
+    margin: 20px;
+    margin-top:5vh;
+    width:fit-content;
+    height:fit-content;
+    min-width: 30%;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+.top-left p {
+    max-width: 40vh;
+    margin-top:-10px;
+}
+.fa-microphone {
+    font-size: 27px;
+    color: #333;
+    margin-right: 12px;
+}
+.fa-gamepad {
+    font-size: 27px;
+    color: #333;
+    margin-right: 12px;
+}
+.fa-headphones {
+    font-size: 27px;
+    color: #333;
+    margin-right: 12px;
+}
+.fa-camera {
+    font-size: 27px;
+    color: #333;
+    margin-right: 12px;
+}
+.title {
+    display: flex;
+    align-items: center;
+}
+.bottom-left {
+    margin-top:8vh;
+}
+label {
+    font-size: 15px;
+    color: #333;
+}
+select {
+    width: 25vh;
+    padding: 1px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    font-size: 15px;
+}
+.properties {
+    width:42vh;
+    height: fit-content;
+    text-align: center;
+}
+table {
+    text-align: left;
+}
+.right {
+    margin-left:10vh;
+}
+.top-right {
+    margin-top: 5vh;
+}
+.bottom-right {
+    margin-top: 5vh;
+}
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    font-family: 'Inter', sans-serif;
+}
+button:hover {
+    background-color: #555;
+}
+button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+    border:none;
+}
+video {
+    width: 100%;
+    border-radius: 10px;
+    border:none;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        width:fit-content
+    }
+    nav a {
+        margin: 10px 0;
+    }
+    .test {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        width:fit-content;
+        display:none;
+    }
+    nav a {
+        margin: 5px 0;
+        font-size: 0.9em;
+    }
+    .test {
+        padding: 10px;
+    }
+    .test h1 {
+        font-size: 1.2em;
+    }
+    .test p {
+        font-size: 0.9em;
+    }
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.left-speaker {
+    margin-right: 10vh;
+}
+.right-speaker {
+    margin-left: 10px;
+}
+img {
+    cursor: pointer;
+}
+.top {
+    text-align: left;
+}
+.bottom {
+    text-align: left;
+}
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+.footer {
+    width: 100%;
+    text-align: center;
+  }
+
+.selected {
+    background-color: #333;
+    border-radius: 10px;
+}

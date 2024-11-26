@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Tester - Hardware Tester</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e4807bb23d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <script src="js/speaker.js"></script>
+</head>
+<body>
+    <div class="header" onclick='window.location.href = "index.html";'>
+        <h1>Hardware Tester</h1>
+    </div>
+    <center>
+        <nav>
+            <a href="microphone.html">Microphone</a>
+            <a href="webcam.html">Webcam</a>
+            <a class="selected" href="speaker.html">Speakers</a>
+            <a href="GPU.html">GPU</a>
+        </nav>
+    </center>
+    <center>
+        <div class="tester">
+            <div class="left">
+                <div class="top-left">
+                    <div class='title'><i class="fa-solid fa-headphones"></i> <h1>Speakers</h1></div>  
+                    <p>Test your speaker, and find out whether it supports stereo sound or not.</p>
+                </div>
+                
+            </div>
+            <div class="right">
+                <div class="top-right">
+                    <div class="container">
+                        <div class="left-speaker">
+                            <img onclick='playSound("sound.mp3", -1)' src="img/speaker-left.png" height="50px" width="40px;" alt="Left Speaker">
+                        </div>
+                        <div class="right-speaker">
+                            <img onclick='playSound("sound.mp3", 1)' src="img/speaker-right.png" height="50px" width="40px;" alt="Right Speaker">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <div class="footer">
+        <p>Made with 💚 by <a style="color:#0071e3;text-decoration: underline;" href="https://github.com/v-pun215">v-pun215</a></p>
+    </div>
+</body>
+</html>

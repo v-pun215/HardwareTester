@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Tester - Hardware Tester</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e4807bb23d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <script src="js/gpu.js"></script>
+</head>
+<body>
+    <div class="header" onclick='window.location.href = "index.html";'>
+        <h1>Hardware Tester</h1>
+    </div>
+    <center>
+        <nav>
+            <a href="microphone.html">Microphone</a>
+            <a href="webcam.html">Webcam</a>
+            <a href="speaker.html">Speakers</a>
+            <a class="selected" href="gpu.html">GPU</a>
+        </nav>
+    </center>
+    <center>
+        <div class="tester" style="display: block;text-align: center;">
+            <div class="top">
+                <p style="margin-top:3vh;color:gray;margin-bottom:-15px;">Your GPU</p>
+                <h1 id="gpu-name" style="font-size: 40px;">NVIDIA GeForce RTX 4090</h1>
+            </div>
+            <div class="bottom">
+                <div class="properties" style="width:100%;">
+                    <table style="width:135%;">
+                        <tr>
+                            <td>Current Resolution</td>
+                            <td id="res">None</td>
+                        </tr>
+                        <tr>
+                            <td>Color Depth</td>
+                            <td id="cd">None</td>
+                        </tr>
+                        <tr>
+                            <td>Max Texture Size</td>
+                            <td id="mts">None</td>
+                        </tr>
+                        <tr>
+                            <td>FPS</td>
+                            <td id="fps">None</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </center>
+    <div class="footer">
+        <p>Made with 💚 by <a style="color:#0071e3;text-decoration: underline;" href="https://github.com/v-pun215">v-pun215</a></p>
+    </div>
+</body>
+</html>

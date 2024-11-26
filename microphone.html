@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microphone Tester - Hardware Tester</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e4807bb23d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <script src="js/mic.js"></script>
+</head>
+<body onload="listaudiodevices()">
+    <div class="header" onclick='window.location.href = "index.html";'>
+        <h1>Hardware Tester</h1>
+    </div>
+    <center>
+        <nav>
+            <a class="selected" href="microphone.html">Microphone</a>
+            <a href="webcam.html">Webcam</a>
+            <a href="speaker.html">Speakers</a>
+            <a href="GPU.html">GPU</a>
+        </nav>
+    </center>
+    <center>
+        <div class="tester">
+            <div class="left">
+                <div class="top-left">
+                    <div class='title'><i class="fa-solid fa-microphone"></i> <h1>Microphone</h1></div>  
+                    <p>This test requires access to your microphone. If you haven't already, please grant access to your microphone and refresh the page. Try refreshing the page or going into your browser settings to grant access to your microphone.</p>
+                </div>
+                <div class="bottom-left">
+                    <label>Select Audio Device:</label>
+                    <select id="audioselector">
+                    </select>
+                    <div class="properties">
+                        <p style="font-weight: 600;font-size: 19px;">Properties</p>
+                        <table style="width:100%;">
+                            <tr>
+                                <td>Channels</td>
+                                <td id="ch">None</td>
+                            </tr>
+                            <tr>
+                                <td>Latency</td>
+                                <td id="la">None</td>
+                            </tr>
+                            <tr>
+                                <td>Sample Rate</td>
+                                <td id="sr">None</td>
+                            </tr>
+                            <tr>
+                                <td>Sample Size</td>
+                                <td id="ss">None</td>
+                            </tr>
+                            <tr>
+                                <td>Auto Gain Control</td>
+                                <td id="agc">None</td>
+                            </tr>
+                            <tr>
+                                <td>Echo Cancellation</td>
+                                <td id="ec">None</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="top-right">
+                    <button id="start">Start Recording</button>
+                    <button id="stop" disabled>Stop Recording</button>
+                </div>
+                <div class="bottom-right">
+                    <audio id="audio" controls></audio>
+                </div>
+            </div>
+        </div>
+    </center>
+    <div class="footer">
+        <p>Made with 💚 by <a style="color:#0071e3;text-decoration: underline;" href="https://github.com/v-pun215">v-pun215</a></p>
+    </div>
+</body>
+</html>

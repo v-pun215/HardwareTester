@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Tester - Hardware Tester</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e4807bb23d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <script src="js/cam.js"></script>
+</head>
+<body>
+    <div class="header" onclick='window.location.href = "index.html";'>
+        <h1>Hardware Tester</h1>
+    </div>
+    <center>
+        <nav>
+            <a href="microphone.html">Microphone</a>
+            <a class="selected" href="webcam.html">Webcam</a>
+            <a href="speaker.html">Speakers</a>
+            <a href="GPU.html">GPU</a>
+        </nav>
+    </center>
+    <center>
+        <div class="tester">
+            <div class="left">
+                <div class="top-left">
+                    <div class='title'><i class="fa-solid fa-camera"></i> <h1>Webcam</h1></div>  
+                    <p>This test requires access to your webcam. If you haven't already, please grant access to your webcam and refresh the page. Try refreshing the page or going into your browser settings to grant access to your webcam.</p>
+                </div>
+                <div class="bottom-left">
+                    <div class="properties">
+                        <p style="font-weight: 600;font-size: 19px;">Properties</p>
+                        <table style="width:100%;">
+                            <tr>
+                                <td>Resolution</td>
+                                <td id="res">None</td>
+                            </tr>
+                            <tr>
+                                <td>Aspect Ratio</td>
+                                <td id="ar">None</td>
+                            </tr>
+                            <tr>
+                                <td>FPS</td>
+                                <td id="fps">None</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="top-right">
+                    <video id="video" muted autoplay></video>
+                </div>
+            </div>
+        </div>
+    </center>
+    <div class="footer">
+        <p>Made with 💚 by <a style="color:#0071e3;text-decoration: underline;" href="https://github.com/v-pun215">v-pun215</a></p>
+    </div>
+</body>
+</html>
