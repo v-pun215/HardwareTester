@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3e6ac997-1c72-445c-83fe-fe85a0acb831)# HardwareTester
+# HardwareTester
 A website that simply lets you test hardware connected to your device.
 
 # How-to
