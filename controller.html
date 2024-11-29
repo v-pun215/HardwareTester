@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controller Tester - Hardware Tester</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e4807bb23d.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <script src="js/controller.js"></script>
+</head>
+<body>
+    <div class="header" onclick='window.location.href = "index.html";'>
+        <h1>Hardware Tester</h1>
+    </div>
+    <center>
+        <nav>
+            <a href="microphone.html">Microphone</a>
+            <a href="webcam.html">Webcam</a>
+            <a href="speaker.html">Speakers</a>
+            <a href="gpu.html">GPU</a>
+            <a class="selected" href="controller.html">Controller</a>
+        </nav>
+    </center>
+    <center>
+        <div class="tester" style="max-width: 100%; min-width: 60%;">
+            <div class="left" style="width:50%;">
+                <div class="top-left">
+                    <div class='title'><i class="fa-solid fa-gamepad"></i> <h1>Controller</h1></div>  
+                    <p>Plug in a controller to check if everything's working fine, so you don't lose another game.</p>
+                </div>
+                <div class="bottom-left">
+                    <div class="properties">
+                        <h2 id="controller-name">Plug in a controller and press a button.</h2>
+                        <table style="width:100%;">
+                            <tr>
+                                <td>Vibration</td>
+                                <td id="controller-vibration">None</td>
+                            </tr>
+                            <tr>
+                                <td>Haptic Actuators</td>
+                                <td id="controller-haptics">None</td>
+                            </tr>
+                            <tr>
+                                <td>Mapping</td>
+                                <td id="controller-mapping">None</td>
+                            </tr>
+                        </table>
+                        <button class="vibrate-button" id="vibrate-button">Vibrate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right" style="width:50%;">
+                <div class="top-right">
+                    <div class="sticks-container" id="sticks">
+                        <div class="stick-container" id="stick1">
+                            <div class="stick-line" id="stick1-line"></div>
+                            <div class="stick" id="stick1-pos"></div>
+                        </div>
+                        <div class="stick-container" id="stick2">
+                            <div class="stick-line" id="stick2-line"></div>
+                            <div class="stick" id="stick2-pos"></div>
+                        </div>
+                    </div>
+                    <div id="axes"></div>
+                    <div id="buttons" class="buttons-container"></div>
+                </div>
+                <div class="bottom-right">
+                </div>
+            </div>
+        </div>
+    </center>
+    <div class="footer">
+        <p>Made with 💚 by <a style="color:#0071e3;text-decoration: underline;" href="https://github.com/v-pun215">v-pun215</a></p>
+    </div>
+</body>
+</html>
