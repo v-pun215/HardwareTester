@@ -12,6 +12,12 @@ A website that simply lets you test hardware connected to your device.
 1. Click the triangle on each side (corresponding to speaker driver). Eg. the left triangle will play sound in the left audio driver. Useful for checking if you have stereo sound.
 > Checking your GPU
 1. When loaded, the page shows information about your GPU.
+> Testing your Controller
+1. Plug in a controller, and press a button.
+
+# Updates
+1. Update 1: Controller Tester!
+   - Added Controller Testing capability, and an easter egg! (can u find it?)
 
 # Screenshots
 1. Home Page
@@ -28,6 +34,10 @@ A website that simply lets you test hardware connected to your device.
 
 5. GPU Tester
 ![image](https://github.com/user-attachments/assets/5d33c8a2-5132-4aa7-8b42-0f5e8fb583b8)
+
+6. Controller Tester
+![image](https://github.com/user-attachments/assets/6d66f501-89d4-4e8e-af7f-de592a4dd7c3)
+
 
 
 Made with 💚 by v-pun215
