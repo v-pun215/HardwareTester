@@ -18,6 +18,7 @@ A website that simply lets you test hardware connected to your device.
 # Updates
 1. Update 1: Controller Tester!
    - Added Controller Testing capability, and an easter egg! (can u find it?)
+2. Update 2: Bugfixes
 
 # Screenshots
 1. Home Page
