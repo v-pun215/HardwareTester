@@ -19,6 +19,8 @@ A website that simply lets you test hardware connected to your device.
 1. Update 1: Controller Tester!
    - Added Controller Testing capability, and an easter egg! (can u find it?)
 2. Update 2: Bugfixes
+3. Update 3: MIDI Tester!
+   - Added MIDI Testing capability.
 
 # Screenshots
 1. Home Page
