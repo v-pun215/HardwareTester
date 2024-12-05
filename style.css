@@ -299,3 +299,34 @@ img {
 .vibrate-button {
     margin-top: 50px;
 }
+.piano {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    position: relative;
+    width: 100%; /* 52 white keys * 30px width */
+}
+.key {
+    width: 20px;
+    height: 70px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    margin: 0px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+.key.black {
+    width: 8px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: -6px;
+    z-index: 2;
+}
+.key.pressed {
+    background-color: yellow;
+}

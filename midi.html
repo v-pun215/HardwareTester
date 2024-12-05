@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPU Tester - Hardware Tester</title>
+    <title>MIDI Tester - Hardware Tester</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e4807bb23d.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-    <script src="js/gpu.js"></script>
 </head>
 <body>
     <div class="header" onclick='window.location.href = "index.html";'>
@@ -18,37 +17,20 @@
             <a href="microphone.html">Microphone</a>
             <a href="webcam.html">Webcam</a>
             <a href="speaker.html">Speakers</a>
-            <a class="selected" href="gpu.html">GPU</a>
+            <a href="gpu.html">GPU</a>
             <a href="controller.html">Controller</a>
-            <a href="midi.html">MIDI</a>
+            <a class="selected" href="midi.html">MIDI</a>
         </nav>
     </center>
     <center>
         <div class="tester" style="display: block;text-align: center;">
             <div class="top">
-                <p style="margin-top:3vh;color:gray;margin-bottom:-15px;">Your GPU</p>
-                <h1 id="gpu-name" style="font-size: 40px;">NVIDIA GeForce RTX 4090</h1>
+                <p style="margin-top:3vh;color:gray;margin-bottom:-15px;">MIDI Device</p>
+                <h1 id="midi-status" style="font-size: 40px;">Connect Device</h1>
             </div>
             <div class="bottom">
-                <div class="properties" style="width:100%;">
-                    <table style="width:135%;">
-                        <tr>
-                            <td>Current Resolution</td>
-                            <td id="res">None</td>
-                        </tr>
-                        <tr>
-                            <td>Color Depth</td>
-                            <td id="cd">None</td>
-                        </tr>
-                        <tr>
-                            <td>Max Texture Size</td>
-                            <td id="mts">None</td>
-                        </tr>
-                        <tr>
-                            <td>FPS</td>
-                            <td id="fps">None</td>
-                        </tr>
-                    </table>
+                <div class="piano" id="piano">
+                    <!-- Piano keys will be generated here -->
                 </div>
             </div>
         </div>
@@ -56,5 +38,6 @@
     <div class="footer">
         <p>Made with 💚 by <a style="color:#0071e3;text-decoration: underline;" href="https://github.com/v-pun215">v-pun215</a></p>
     </div>
+    <script src="js/midi.js"></script>
 </body>
 </html>
